@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:omni_datetime_picker/src/time_picker_spinner.dart';
+import 'package:omni_date_time_picker_edited/src/time_picker_spinner.dart';
 
 import '../omni_datetime_picker.dart';
 
