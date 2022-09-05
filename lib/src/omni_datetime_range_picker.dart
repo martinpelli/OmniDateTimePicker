@@ -170,7 +170,7 @@ class _OmniDateTimeRangePickerState extends State<OmniDateTimeRangePicker> with 
               Container(
                 constraints: BoxConstraints(
                     maxHeight: widget.type == OmniDateTimePickerType.dateAndTime
-                        ? MediaQuery.of(context).size.height - 200
+                        ? MediaQuery.of(context).size.height - 330
                         : MediaQuery.of(context).size.height - 320),
                 decoration: BoxDecoration(
                   color: widget.backgroundColor ?? Colors.white,
@@ -202,6 +202,7 @@ class _OmniDateTimeRangePickerState extends State<OmniDateTimeRangePicker> with 
                               ? Wrap(
                                   children: [
                                     TimePickerSpinner(
+                                      itemHeight: 30,
                                       is24HourMode: widget.is24HourMode ?? false,
                                       isShowSeconds: widget.isShowSeconds ?? false,
                                       normalTextStyle:
@@ -250,6 +251,7 @@ class _OmniDateTimeRangePickerState extends State<OmniDateTimeRangePicker> with 
                           ),
                           widget.type == OmniDateTimePickerType.dateAndTime
                               ? TimePickerSpinner(
+                                  itemHeight: 30,
                                   is24HourMode: widget.is24HourMode ?? false,
                                   isShowSeconds: widget.isShowSeconds ?? false,
                                   normalTextStyle:
